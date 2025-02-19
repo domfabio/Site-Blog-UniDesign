@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./assets/icon.svg" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <script src="./js/menu-burger.js" defer></script>
+    <script src="./js/reveal-on-scroll.js" defer></script>
+    <title>Estúdio Uni Design - Blog</title>
+  </head>
+
+  <body>
+    <header class="header-pages">
+      <nav>
+        <a href="./index.html" class="logo-ud"
+          ><img src="./assets/icon.svg" alt="logo-ud"
+        /></a>
+        <a href="./index.html" class="logo-unidesign"
+          ><img src="./assets/logo-uni-1-black.svg" alt="logo-unidesign"
+        /></a>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./portfolio.html">Portfólio</a></li>
+          <li><a href="./midia-e-depoimentos.html">Mídia & Depoimentos</a></li>
+          <li><a href="#" id="nav-active-header">Blog</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+        <a href="#" class="burger-icon" onclick="openBurger()">
+          <img src="./assets/burger-icon-black.svg" alt="icon"
+        /></a>
+      </nav>
+    </header>
+
+    <section class="hidden hero-section-pages">
+      <div class="hidden hero-container">
+        <h1>BLOG</h1>
+      </div>
+    </section>
+
+    <div class="container">
+      <main>
+        
+        <article class="post hidden">
+          <img src="./assets/blog/post01.png" alt="post01" />
+          <p class="time"><time datetime="2025-02-18">18/02/25</time></p>
+          <h4 class="title"><a href="#">Algum título 1</a></h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+            non, placeat quam accusamus velit a ad molestiae vitae praesentium,
+            quae reiciendis!
+          </p>
+          <a href="#" class="btn">LEIA MAIS</a>
+        </article>
+
+        <article class="post hidden">
+          <img src="./assets/blog/post02.png" alt="post01" />
+          <p class="time"><time datetime="2025-02-18">18/02/25</time></p>
+          <h4 class="title"><a href="#">Algum título 2</a></h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+            non, placeat quam accusamus velit a ad molestiae vitae praesentium,
+            quae reiciendis!
+          </p>
+          <a href="#" class="btn">LEIA MAIS</a>
+        </article>
+
+        <article class="post hidden">
+          <img src="./assets/blog/post03.png" alt="post01" />
+          <p class="time"><time datetime="2025-02-18">18/02/25</time></p>
+          <h4 class="title"><a href="#">Algum título 3</a></h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+            non, placeat quam accusamus velit a ad molestiae vitae praesentium,
+            quae reiciendis!
+          </p>
+          <a href="#" class="btn">LEIA MAIS</a>
+        </article>
+
+        <article class="post hidden">
+          <img src="./assets/blog/post04.png" alt="post01" />
+          <p class="time"><time datetime="2025-02-18">18/02/25</time></p>
+          <h4 class="title"><a href="#">Algum título 4</a></h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+            non, placeat quam accusamus velit a ad molestiae vitae praesentium,
+            quae reiciendis!
+          </p>
+          <a href="#" class="btn">LEIA MAIS</a>
+        </article>
+
+        <article class="post hidden">
+          <img src="./assets/blog/post05.png" alt="post01" />
+          <p class="time"><time datetime="2025-02-18">18/02/25</time></p>
+          <h4 class="title"><a href="#">Algum título 5</a></h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+            non, placeat quam accusamus velit a ad molestiae vitae praesentium,
+            quae reiciendis!
+          </p>
+          <a href="#" class="btn">LEIA MAIS</a>
+        </article>
+
+        <article class="post hidden">
+          <img src="./assets/blog/post06.png" alt="post01" />
+          <p class="time"><time datetime="2025-02-18">18/02/25</time></p>
+          <h4 class="title"><a href="#">Algum título 6</a></h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+            non, placeat quam accusamus velit a ad molestiae vitae praesentium,
+            quae reiciendis!
+          </p>
+          <a href="#" class="btn">LEIA MAIS</a>
+        </article>
+
+      </main>
+
+      <aside id="sidebar">
+        <section id="search-bar" class="hidden">
+          <h4>Pesquisa</h4>
+          <form>
+            <input type="text" placeholder="Pesquise no blog" />
+            <input type="submit" value="Buscar" />
+          </form>
+        </section>
+        <section id="categories" class="hidden">
+          <h4>Categorias</h4>
+          <div id="tags-container">
+            <a href="#">Blog</a>
+            <a href="#">UX Design</a>
+            <a href="#">UI Design</a>
+            <a href="#">Web Design</a>
+            <a href="#">SEO</a>
+            <a href="#">E-commerce</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="./js/footer.js"></script>
+  </body>
+</html>

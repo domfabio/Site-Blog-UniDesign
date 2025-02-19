@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./assets/icon.svg" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/menu-burger.js" defer></script>
+    <script src="./js/reveal-on-scroll.js" defer></script>
+    <script src="./js/header-index.js"></script>
+    <title>Estúdio Uni Design - Home</title>
+  </head>
+
+  <body>
+    <header class="header-index">
+      <nav>
+        <a href="./index.html" class="logo-ud"
+          ><img src="./assets/icon.svg" alt="logo-ud"
+        /></a>
+        <a href="./index.html" class="logo-unidesign"
+          ><img src="./assets/logo-uni-1.svg" alt="logo-unidesign"
+        /></a>
+        <ul>
+          <li><a href="#" id="nav-active-header">Home</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./portfolio.html">Portfólio</a></li>
+          <li>
+            <a href="./midia-e-depoimentos.html">Mídia & Depoimentos</a>
+          </li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+        <a href="#" class="burger-icon" onclick="openBurger()">
+          <img src="./assets/burger-icon.svg" alt="icon"
+        /></a>
+      </nav>
+    </header>
+    <header class="header-alternate">
+      <nav>
+        <a href="./index.html" class="logo-ud"
+          ><img src="./assets/icon.svg" alt="logo-ud"
+        /></a>
+        <a href="./index.html" class="logo-unidesign"
+          ><img src="./assets/logo-uni-1-black.svg" alt="logo-unidesign"
+        /></a>
+        <ul>
+          <li><a href="#" id="nav-active-header">Home</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./portfolio.html">Portfólio</a></li>
+          <li>
+            <a href="./midia-e-depoimentos.html">Mídia & Depoimentos</a>
+          </li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+        <a href="#" class="burger-icon" onclick="openBurger()">
+          <img src="./assets/burger-icon-black.svg" alt="icon"
+        /></a>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="hidden hero-home">
+        <img class="hidden" src="./assets/logo-uni-2.svg" alt="" />
+      </section>
+
+      <section class="cards-section hidden">
+        <a href="./sobre.html">
+          <div class="card-container card-container-1">
+            <div class="content-card-1">
+              <h2>SOBRE</h2>
+            </div>
+          </div>
+        </a>
+        <a href="./portfolio.html">
+          <div class="card-container card-container-2">
+            <div class="content-card-2">
+              <h2>PORT</h2>
+              <h2>FÓLIO</h2>
+            </div>
+          </div>
+        </a>
+        <a href="./midia-e-depoimentos.html">
+          <div class="card-container card-container-3">
+            <div class="content-card-3">
+              <h3>MÍDIA &</h3>
+              <h3>DEPOIM</h3>
+              <h3>ENTOS</h3>
+            </div>
+          </div>
+        </a>
+        <a href="./blog.html">
+          <div class="card-container card-container-4">
+            <div class="content-card-4">
+              <h2>BLOG</h2>
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="./js/footer.js"></script>
+  </body>
+</html>

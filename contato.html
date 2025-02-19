@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./assets/icon.svg" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/contato.css" />
+    <script src="./js/menu-burger.js" defer></script>
+    <script src="./js/reveal-on-scroll.js" defer></script>
+    <title>Estúdio Uni Design - Contato</title>
+  </head>
+
+  <body>
+    <header class="header-pages">
+      <nav>
+        <a href="./index.html" class="logo-ud"
+          ><img src="./assets/icon.svg" alt="logo-ud"
+        /></a>
+        <a href="./index.html" class="logo-unidesign"
+          ><img src="./assets/logo-uni-1-black.svg" alt="logo-unidesign"
+        /></a>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./portfolio.html">Portfólio</a></li>
+          <li><a href="./midia-e-depoimentos.html">Mídia & Depoimentos</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="#" id="nav-active-header">Contato</a></li>
+        </ul>
+        <a href="#" class="burger-icon" onclick="openBurger()">
+          <img src="./assets/burger-icon-black.svg" alt="icon"
+        /></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hidden hero-section-pages">
+        <div class="hidden hero-container">
+          <h1>CONTATO</h1>
+        </div>
+      </section>
+
+      <section class="hidden form-section">
+        <div class="form-container">
+          <h3>Fale Conosco!</h3>
+          <form action="#" method="POST">
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Digite seu Nome"
+            />
+
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="seuemail@exemplo.com"
+            />
+
+            <label for="message">Mensagem:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              placeholder="Digite sua mensagem aqui"
+            ></textarea>
+
+            <input type="submit" value="Enviar" />
+          </form>
+          <ul class="hidden">
+            <li>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 2.54762H9M4.6875 14H10.3125C11.2445 14 12 13.3764 12 12.6071V2.39286C12 1.6236 11.2445 1 10.3125 1H4.6875C3.75552 1 3 1.6236 3 2.39286V12.6071C3 13.3764 3.75552 14 4.6875 14Z"
+                  stroke="#302d2c"
+                  stroke-width="0.5"
+                  stroke-linecap="round"
+                />
+                <circle cx="7.5" cy="12.5" r="0.5" fill="#302d2c" />
+              </svg>
+              <a href="https://api.whatsapp.com/send?phone=5512997162192">
+                +55 (12) 99716-2192 (WhatsApp)
+              </a>
+            </li>
+            <li>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14 4.35V10.65C14 11.3956 13.3284 12 12.5 12H2.5C1.67157 12 1 11.3956 1 10.65V4.35M14 4.35C14 3.60442 13.3284 3 12.5 3H2.5C1.67157 3 1 3.60442 1 4.35M14 4.35V4.49563C14 4.96443 13.7298 5.39967 13.2861 5.64537L8.28615 8.4146C7.80404 8.68161 7.19596 8.68161 6.71385 8.4146L1.71385 5.64537C1.27023 5.39967 1 4.96443 1 4.49563V4.35"
+                  stroke="#302d2c"
+                  stroke-width="0.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <a href="mailto:contato@estudiounidesign.com.br">
+                contato@estudiounidesign.com.br
+              </a>
+            </li>
+          </ul>
+
+          <img src="./assets/icon.svg" alt="" class="hidden logo-contato" />
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    <script src="./js/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+header {
+  background-color: var(--white);
+}
+
+#nav-active-header {
+  font-weight: 500;
+  opacity: 1;
+}
+
+nav ul li a {
+  color: var(--gray-dark);
+}
+
+/* ------sobre------- */
+
+.hero-section-pages {
+  background-image: url(../assets/bg-hero-sobre.png);
+}
+
+.about-section {
+  background-image: url(../assets/bg-about.png);
+  width: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  padding: 5rem 0;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  padding: 5rem 2rem;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.about-container img {
+  width: min(45%, 604px);
+  height: auto;
+}
+
+#about-uni-img {
+  border-radius: 50%;
+}
+
+.about-info {
+  max-width: 471px;
+}
+
+.about-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-info p {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  line-height: 2rem;
+}
+
+@media (max-width: 768px) {
+
+  .about-section {
+    padding: 1rem 0;
+  }
+
+  .about-container img,
+  .about-container {
+    width: 100%;
+  }
+
+  .about-container {
+    gap: 60px;
+  }
+}

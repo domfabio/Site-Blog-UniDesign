@@ -1,0 +1,131 @@
+#nav-active-header {
+  font-weight: 350;
+  opacity: 0.9;
+}
+
+nav ul li a {
+  color: var(--white);
+  font-weight: 300;
+}
+
+/* header-alternate */
+.header-index,
+.header-alternate {
+  transition: opacity 0.5s ease-in-out;
+  position: fixed;
+  z-index: 1000;
+}
+
+.header-alternate {
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px 0px;
+}
+
+.header-alternate a {
+  color: var(--gray-dark);
+  font-weight: 300;
+  -webkit-text-stroke: 0.5px var(--gray-dark);
+  stroke: 0.5px var(--gray-dark);
+}
+/* header-alternate */
+
+.hero-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+    url(../assets/bg-hero.png);
+  background-size: cover;
+}
+
+.hero img {
+  opacity: 0.8;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  padding: 5rem 0;
+  margin: 0 auto;
+  gap: 77px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 532px;
+  height: 371px;
+  border-radius: 40px;
+  background-size: cover;
+  background-blend-mode: multiply;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-container:hover {
+  background-color: var(--ocre);
+}
+
+.card-container h2 {
+  font-size: 90px;
+  font-weight: bold;
+  color: var(--white);
+  -webkit-text-stroke: 2px var(--white);
+}
+
+.card-container-1 {
+  background-color: var(--gray-light);
+}
+
+.card-container-2 {
+  background-image: url(../assets/bg-card-2.png);
+}
+
+.card-container-3 {
+  background-image: url(../assets/bg-card-3.png);
+}
+
+.card-container-4 {
+  background-image: url(../assets/bg-card-4.png);
+}
+
+.content-card-1 h2 {
+  color: var(--gray-medium);
+  -webkit-text-stroke: 2px var(--gray-medium);
+}
+
+.content-card-3 h3 {
+  font-size: 70px;
+  color: var(--white);
+  font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+  .cards-section {
+    max-width: 768px;
+    gap: 50px;
+  }
+  .card-container {
+    display: grid;
+    width: 350px;
+    height: 250px;
+  }
+  .card-container h2 {
+    font-size: 60px;
+  }
+  .content-card-3 h3 {
+    font-size: 50px;
+  }
+}
+
