@@ -271,6 +271,7 @@ footer p {
   width: fit-content;
   height: 44px;
   border: none;
+  padding: 0 5rem;
   background: none;
   font-size: 1.2rem;
   cursor: pointer;
