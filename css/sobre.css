@@ -52,6 +52,16 @@ nav ul li a {
 .about-info h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+
+}
+
+.about-info h2::before {
+  content: '';
+  position: absolute;
+  margin-top: 52px;
+  width: 2rem;
+  height: 3px;
+  background-color: var(--ocre);
 }
 
 .about-info p {
@@ -61,7 +71,6 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
-
   .about-section {
     padding: 1rem 0;
   }

@@ -57,12 +57,12 @@ article {
 .btn {
   display: inline-block;
   padding: 15px 50px;
-  background-color: #a79f9e;
-  color: var(--white);
+  background-color: var(--ocre);
+  color: var(--gray-dark);
   text-decoration: none;
   border-radius: 50px;
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 350;
   transition: 0.7s;
 }
 
@@ -133,18 +133,26 @@ article {
 #search-bar form {
   display: flex;
   width: 100%;
+  gap: 0.8rem;
 }
 
 #search-bar input {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   border: 1px solid #ddd;
+  border-radius: 0.3rem;
 }
 
 #search-bar input[type='submit'] {
   cursor: pointer;
-  background-color: #37a1f7;
+  background-color: #986d5f;
   color: #fff;
   border: none;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#search-bar input[type='submit']:hover {
+  opacity: 0.8;
 }
 
 #categories li {
@@ -158,7 +166,7 @@ article {
 }
 
 #tags-container a {
-  background-color: #ddd;
+  background-color: #eee;
   padding: 0.5rem 0.7rem;
   border-radius: 0.3rem;
 }

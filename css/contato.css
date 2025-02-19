@@ -63,17 +63,20 @@ textarea {
   min-height: 166px;
   padding-top: 20px;
   resize: vertical;
+  
 }
 
 input[type='submit'] {
+  margin-top: 18px;
   margin-bottom: 50px;
   width: fit-content;
   align-self: flex-end;
-  background-color: var(--gray-light);
+  background-color: var(--ocre);
   color: var(--gray-dark);
   border: none;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 350;
   padding: 1rem 2rem;
   border-radius: 10px;
   transition: 0.5s;

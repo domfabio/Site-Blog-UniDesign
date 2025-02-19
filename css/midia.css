@@ -64,11 +64,22 @@ nav ul li a {
 }
 
 .mid-testimonial-content a {
-  color: #00b2ff;
-  font-size: 1.2rem;
-  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  background-color: var(--ocre);
+  color: var(--gray-dark);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.5s;
+  font-size: 0.8rem;
+  font-weight: 350;
+  text-transform: uppercase;
 }
 
+.mid-testimonial-content a:hover {
+  opacity: 0.7;
+}
 
 @media (max-width: 480px) {
   .sections-container img {
