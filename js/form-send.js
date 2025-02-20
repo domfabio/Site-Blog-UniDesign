@@ -1,5 +1,5 @@
 (function() {
-  emailjs.init("JNw2Cfzf6fteoWMsM"); // Substitua pela sua Public Key
+  emailjs.init("JNw2Cfzf6fteoWMsM"); 
 })();
 
 const form = document.getElementById("meuFormulario");
@@ -21,16 +21,16 @@ form.addEventListener("submit", function(event) {
 
   let isValid = true;
 
-  // Remove mensagens de erro anteriores
+  // Remove mensagens de erro
   document.querySelectorAll(".erro-msg").forEach(msg => msg.remove());
 
-  // Validação do Nome
+  // Validação do campo nome
   if (!name.value.trim()) {
     mostrarErro(name, "O nome é obrigatório.");
     isValid = false;
   }
 
-  // Validação do E-mail (evita a validação nativa)
+  // Validação do campo e-mail
   if (!email.value.trim()) {
     mostrarErro(email, "O e-mail é obrigatório.");
     isValid = false;
@@ -39,7 +39,7 @@ form.addEventListener("submit", function(event) {
     isValid = false;
   }
 
-  // Validação da Mensagem
+  // Validação do campo de mensagem
   if (!message.value.trim()) {
     mostrarErro(message, "A mensagem não pode estar vazia.");
     isValid = false;
@@ -76,7 +76,7 @@ function validarEmail(email) {
 function mostrarErro(campo, mensagem) {
   const erroMsg = document.createElement("p");
   erroMsg.classList.add("erro-msg");
-  erroMsg.style.color = "red";
+  erroMsg.style.color = "#f34336";
   erroMsg.style.fontSize = "14px";
   erroMsg.textContent = mensagem;
   campo.insertAdjacentElement("afterend", erroMsg);
