@@ -44,36 +44,24 @@
       <section class="hidden form-section">
         <div class="form-container">
           <h3>Fale Conosco!</h3>
-          <form action="#" method="POST">
+          <form id="meuFormulario" novalidate>
             <label for="name">Nome:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="Digite seu Nome"
-            />
-
+            <input type="text" id="name" name="from_name" placeholder="Digite seu Nome" />
+          
             <label for="email">E-mail:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="seuemail@exemplo.com"
-            />
-
+            <input type="email" id="email" name="reply_to" placeholder="seuemail@exemplo.com" />
+          
             <label for="message">Mensagem:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              required
-              placeholder="Digite sua mensagem aqui"
-            ></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Digite sua mensagem aqui"></textarea>
+          
+            <p id="mensagemEnviada" style="display: none; color: #0d920d">
+              Mensagem enviada com sucesso!
+            </p>
 
-            <input type="submit" value="ENVIAR" />
+            <button type="submit" id="submitBtn">ENVIAR</button>
+          
           </form>
+
           <ul class="hidden">
             <li>
               <svg
@@ -91,7 +79,11 @@
                 />
                 <circle cx="7.5" cy="12.5" r="0.5" fill="#302d2c" />
               </svg>
-              <a href="https://api.whatsapp.com/send?phone=5512997162192" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://api.whatsapp.com/send?phone=5512997162192"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 +55 (12) 99716-2192 (WhatsApp)
               </a>
             </li>
@@ -124,5 +116,8 @@
 
     <footer id="footer-placeholder"></footer>
     <script src="./js/footer.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/js/form-send.js"></script>
   </body>
 </html>
