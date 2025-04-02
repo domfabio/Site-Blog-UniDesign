@@ -65,7 +65,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  max-width: 1512px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -75,8 +75,8 @@ nav {
 }
 
 .logo-unidesign img {
-  width: 200px;
-  height: 20px;
+  width: auto;
+  height: 22px;
 }
 
 .burger-icon,
