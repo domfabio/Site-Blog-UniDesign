@@ -14,7 +14,7 @@ nav ul li a {
 /* ----midia------ */
 
 .hero-section-pages {
-  background-image: url(../assets/bg-hero-midia.png);
+  background-image: url(../assets/bg-hero-midia.webp);
 }
 
 .hero-container h1 {
@@ -22,7 +22,7 @@ nav ul li a {
 }
 
 .sections-container {
-  background-image: url(../assets/bg-testmonials.png);
+  background-image: url(../assets/bg-testmonials.webp);
   background-size: cover;
 }
 

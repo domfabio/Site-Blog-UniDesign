@@ -43,7 +43,7 @@ nav ul li a {
   width: 100%;
   height: 600px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
-    url(../assets/bg-hero.png);
+    url(../assets/bg-hero.webp);
   background-size: cover;
   padding-bottom: 100px;
 }
